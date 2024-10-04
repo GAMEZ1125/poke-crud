@@ -1,0 +1,64 @@
+/* src/components/PokemonList.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;               /* Usar flexbox para centrar el contenido */
+    justify-content: center;     /* Centrar horizontalmente */
+    align-items: center;         /* Centrar verticalmente */
+    height: 100vh;               /* Tomar el 100% de la altura de la ventana */
+    text-align: center;          /* Alinear el texto al centro */
+    flex-direction: column;      /* Apilar el contenido en una columna */
+  }
+  
+  .pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;                 /* Hacer que el contenedor de la cuadrícula use el ancho completo */
+    max-width: 1200px;          /* Máximo ancho del contenedor */
+  }
+  
+  .pokemon-card {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pokemon-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Efecto hover */
+  .pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e91e63;
+  }
+  
